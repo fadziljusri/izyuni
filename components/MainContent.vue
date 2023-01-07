@@ -180,7 +180,7 @@ export default {
 	font-family: $cover-font;
 	font-size: 4rem;
 	// margin-bottom: 1rem;
-	line-height: 0.9;
+	line-height: 1;
 
 	&.reverse {
 		flex-direction: row-reverse;
