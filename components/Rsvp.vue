@@ -33,8 +33,9 @@
         <div v-if="!endDate" class="buttons is-centered no-select">
           <button
             data-aos="zoom-in"
+					  data-aos-offset="0"
             class="button is-rounded is-large"
-            :class="'bg-' + theme"
+            :class="'bgi-' + theme"
             @click.prevent="statusModal = !statusModal"
             style="min-width: 130px"
           >
@@ -336,7 +337,12 @@ export default {
         this.rsvp.details.pax = 1;
       }
 
+      console.log(this.currentGuest);
+
       this.rsvp.status = status;
+      if (this.currentGuest) {
+        this.rsvp.details.name = this.currentGuest.guest || "";
+      }
       this.statusModal = false;
       this.detailsModal = true;
     },
@@ -376,7 +382,6 @@ export default {
   font-family: $primary-font !important;
 }
 
-section,
 .text-confirm,
 .label,
 .title {

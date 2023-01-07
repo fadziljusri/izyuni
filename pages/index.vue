@@ -81,7 +81,7 @@ export default {
 		max-width: 520px;
 	}
 
-  &.container,
+	&.container,
 	.container {
 		width: 100%;
 		max-width: 520px !important;
@@ -95,4 +95,6 @@ export default {
 		border-left: #ddd 1px solid;
 	}
 }
+
+
 </style>

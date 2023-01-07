@@ -68,7 +68,7 @@ module.exports = {
   */
   plugins: [
     // "~/plugins/bulma-modal-fx",
-    "~/plugins/auth"
+    "~/plugins/auth",
   ],
 
   /*

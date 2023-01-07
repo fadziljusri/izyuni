@@ -1,7 +1,7 @@
 // Custom theme
-$custom-primary: #242053;
-$custom-secondary: #F7D075;
-$custom-tertiary: #fff;
+$custom-primary: #edebec;
+$custom-secondary: #694b36;
+$custom-tertiary: #694b36;
 
 @import "~assets/scss/var.scss";
 
@@ -12,16 +12,16 @@ $custom-tertiary: #fff;
 }
 
 .bg-image-custom {
-  background-image: url("~assets/frames/custom/custom.jpeg");
+  background-image: url("~assets/frames/custom/custom.png");
   background-size: 100% auto;
   background-position: center center;
 }
 
 .bgi-custom {
   background-color: $custom-primary !important;
-  // background-image: url("~assets/frames/custom/custom.jpeg");
-  // background-size: 100% auto;
-  // background-position: center center;
+  background-image: url("~assets/frames/custom/custom.png");
+  background-size: 100% auto;
+  background-position: center center;
   color: $custom-secondary !important;
 }
 
@@ -30,16 +30,7 @@ $custom-tertiary: #fff;
 }
 
 .txt-dark-custom {
-  color: $custom-primary !important;
-}
-
-.guest.available {
   color: $custom-secondary !important;
-
-  &.guest-box {
-    background: $custom-primary !important;
-    border: 1px solid $custom-secondary !important;
-  }
 }
 
 // Main Section
@@ -63,7 +54,8 @@ $custom-tertiary: #fff;
   }
 
   .groom, .bride {
-    background: -webkit-linear-gradient(45deg, #9A753E, $custom-secondary);
+    // background: -webkit-linear-gradient(45deg, #9A753E, $custom-secondary);
+    background: $custom-secondary;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: auto;
@@ -103,9 +95,9 @@ $custom-tertiary: #fff;
 }
 
 #invitation {
-  // background-image: url("~assets/frames/custom/custom.jpeg");
-  // background-size: 100% 100%;
-  // background-position: center center;
+  background-image: url("~assets/frames/custom/custom-2.png");
+  background-size: 100% 100%;
+  background-position: center center;
   background-color: $custom-primary;
   color: $custom-tertiary;
   padding: 1.5rem !important;
@@ -114,11 +106,16 @@ $custom-tertiary: #fff;
   }
 
   .couples,
-  .parents,
   .guest {
     text-transform: unset !important;
     color: $custom-secondary;
     // font-size: 1.5rem !important;
+  }
+
+  .couples {
+    font-family: $cover-font !important;
+    font-size: 1.8rem !important;
+    font-weight: 500 !important;
   }
 
   .couples .amp {
@@ -128,13 +125,25 @@ $custom-tertiary: #fff;
     font-size: 0.9rem;
     font-weight: normal !important;
   }
+
+  .guest.available {
+    color: $custom-secondary !important;
+    font-family: $cover-font !important;
+    font-size: 1.8rem !important;
+    font-weight: 500 !important;
+  
+  
+    &.guest-box {
+      background: $custom-primary !important;
+      border: 1px solid $custom-secondary !important;
+    }
+  }
 }
 
 #tentative {
-  background-color: $custom-tertiary !important;
-  color: #4a4a4a !important;
-  // color: $custom-;
-  // background-image: url("~assets/frames/custom/custom.jpeg");
+  background-color: #fff !important;
+  color: $custom-secondary !important;
+  // background-image: url("~assets/frames/custom/custom.png");
   // background-size: 100% auto;
   // background-position: center center;
 }

@@ -8,14 +8,14 @@ Default Font
         url(~assets/fonts/agnes-bold.ttf) format('truetype');
 }
 @font-face {
-    font-family: 'Omnes';
-    src: local('Omnes'),
-        url(~assets/fonts/Omnes.ttf) format('truetype');
+    font-family: 'CormorantGaramond';
+    src: local('CormorantGaramond'),
+        url(~assets/fonts/CormorantGaramond.ttf) format('truetype');
 }
-$font-url: 'https://fonts.googleapis.com/css?family=Poppins:wght@500&display=swap';
+$font-url: 'https://fonts.googleapis.com/css?family=Italianno&display=swap';
 
-$cover-font: 'Agnes';
-$primary-font: 'Omnes', sans-serif;
-$secondary-font: 'Poppins', sans-serif;
-$countdown-font: 'Agnes';
+$cover-font: 'Italianno', cursive;
+$primary-font: 'CormorantGaramond', sans-serif;
+$secondary-font: 'CormorantGaramond', sans-serif;
+$countdown-font: 'Italianno', cursive;
 // $countdown-font: 'Alex Brush', cursive;

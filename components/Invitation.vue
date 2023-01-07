@@ -1,10 +1,10 @@
 <template>
 	<section id="invitation" class="section has-text-centered">
-		<img
+		<!-- <img
 			data-aos="zoom-in"
 			src="~/assets/images/line-up.png"
 			style="width: 100%; margin-bottom: 0"
-		/>
+		/> -->
 
 		<!-- <img
 			data-aos="zoom-in"
@@ -14,25 +14,24 @@
 		/> -->
 		<img
 			data-aos="zoom-in"
-			src="~/assets/images/assalamualaikum-white.png"
+			src="~/assets/images/Bismila.svg"
 			alt="assalamualaikum"
 			style="width: 50%; margin-bottom: 0"
 		/>
 		<div>
-			<div
+			<!-- <div
 				data-aos="zoom-in"
 				v-if="i.invitation_section.title"
 				class="main-title"
 			>
 				{{ i.invitation_section.title }}
-			</div>
+			</div> -->
 
 			<div v-if="i.invitation_section.show_parents" class="parents">
 				<div data-aos="zoom-out-left" data-aos-duration="1000">
-					{{ i.parents.name }}
+					{{ i.parents.name }} &amp;
 				</div>
 				<template v-if="i.parents.andWith">
-					<div data-aos="zoom-in">&amp;</div>
 					<div data-aos="zoom-out-right" data-aos-duration="1000">
 						{{ i.parents.andWith }}
 					</div>
@@ -51,15 +50,19 @@
 			>
 				<div
 					:data-aos="
-						i.groom_or_bride_first === 'bride' ? 'fade-left' : 'fade-right'
+						i.groom_or_bride_first === 'bride'
+							? 'fade-left'
+							: 'fade-right'
 					"
 					data-aos-duration="1000"
 					v-html="i.groom[i.invitation_section.couple_name_type]"
 				></div>
-				<div data-aos="zoom-in" class="amp">dengan pasangannya</div>
+				<div data-aos="zoom-in" class="amp">bersama pasangannya</div>
 				<div
 					:data-aos="
-						i.groom_or_bride_first === 'groom' ? 'fade-left' : 'fade-right'
+						i.groom_or_bride_first === 'groom'
+							? 'fade-left'
+							: 'fade-right'
 					"
 					data-aos-duration="1000"
 					v-html="i.bride[i.invitation_section.couple_name_type]"
@@ -71,7 +74,9 @@
 					{{ i.lang === "en" ? "on" : "Pada" }}
 				</div>
 				<!-- <div data-aos="zoom-in" class="intro-sub">on</div> -->
-				<div data-aos="zoom-in" class="heading-2">{{ i.date.greg }}</div>
+				<div data-aos="zoom-in" class="heading-2">
+					{{ i.date.greg }}
+				</div>
 				<div data-aos="zoom-in" class="heading-2" v-if="i.day">
 					{{ i.day }}
 				</div>
@@ -100,11 +105,11 @@
 			</div>
 		</div>
 
-		<img
+		<!-- <img
 			data-aos="zoom-in"
 			src="~/assets/images/line-down.png"
 			style="width: 100%; margin-top: 0.5rem"
-		/>
+		/> -->
 	</section>
 </template>
 
@@ -178,8 +183,8 @@ export default {
 .couples {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.3rem;
-	font-weight: bold;
+	font-size: 1rem;
+	// font-weight: bold;
 
 	&.reverse {
 		flex-direction: column-reverse;
@@ -220,7 +225,7 @@ export default {
 		text-transform: uppercase;
 		font-family: $primary-font;
 		font-weight: bold;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 }
 </style>

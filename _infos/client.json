@@ -2,55 +2,61 @@
   "theme": "custom",
   "lang": "ms",
   "groom_or_bride_first": "bride",
+  "section_status": {
+    "main": 1,
+    "invitation": 1,
+    "tentative": 1,
+    "doa": 1,
+    "countdown": 1,
+    "social": 1,
+    "wishlist": 0
+},
   "groom": {
-    "fullname": "Muhammad Fadzil bin Mohd Jusri",
-    "nickname": "Fadzil"
+    "fullname": "Muhammad Izzuddinshah Bin Hamid",
+    "nickname": "Izz"
   },
   "bride": {
-    "fullname": "Nurhanis binti Mohd Shukri",
-    "nickname": "Hanis"
+    "fullname": "Ayuni Binti Yusoff",
+    "nickname": "Ayuni"
   },
   "parents": {
-    "name": "Mohd Shukri bin Mat Nor",
-    "andWith": "Siti Zubaidah binti Zainuddin"
+    "name": "Yusoff Bin Shafie",
+    "andWith": "Sharidah Binti Mat Isa"
   },
   "date": {
-    "greg": "29 Oktober 2022",
-    "_hijri": "4 Rabiulakhir 1444h"
+    "greg": "18 Februari 2023",
+    "_hijri": "27 Rehab 1444H"
   },
   "time": {
-    "from": "11:00 AM",
-    "to": "4:00 PM"
+    "from": "12:00 PM",
+    "to": "5:00 PM"
   },
   "address": {
-    "general": "E14 Felda Sendayan, <br>Seremban",
-    "exact_html": "E14 Felda Sendayan, 71950 Seremban, Negeri Sembilan",
-    "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.3685812309375!2d101.84726730226927!3d2.6739000000000135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x994e748f3b240f55!2zMsKwNDAnMjYuMCJOIDEwMcKwNTAnNTIuMCJF!5e0!3m2!1sen!2smy!4v1657979741871!5m2!1sen!2smy\" width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
-    "gmaps_link": "https://maps.app.goo.gl/SgegdrYxF8Cknh167",
-    "waze_link": "https://waze.com/ul/hw22rjwg7c?&navigate=yes&zoom=16"
+    "general": "ABC Grand Ballroom <br>Urban Inn, Alor Setar",
+    "exact_html": "ABC Grand Ballroom @ Urban Inn, Kompleks Perniagaan Ampang, Lebuhraya Sultanah Bahiyah, Alor Setar, Kedah",
+    "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.141301382379!2d100.34923131536296!3d6.111670995574634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b45bd7b066c2b%3A0x5f58bb56e7180275!2sABC%20Grand%20Ballroom!5e0!3m2!1sen!2smy!4v1673109598181!5m2!1sen!2smy\" width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+    "gmaps_link": "https://goo.gl/maps/hETkSq38TdFm9fGC8",
+    "waze_link": "https://waze.com/ul/hw1p6g893k?&navigate=yes&zoom=16"
   },
-  "countdown_end": "2022-10-29 11:00 AM",
+  "countdown_end": "2023-02-18 12:00 PM",
   "main_section": {
+    "title": "WALIMATUL URUS"
   },
   "invitation_section": {
     "title": "JEMPUTAN MAJLIS PERKAHWINAN",
-    "text": "Dengan segala hormatnya kami mempersilakan <br>Tan Sri/Dato'/Datin/Tuan/Puan/Encik/Cik <div class='guest guest-box'><br><\/div>bagi memeriahkan majlis perkahwinan anakanda kami"
+    "text": "Dengan segala hormatnya kami mempersilakan <br>Tan Sri/Dato'/Datin/Tuan/Puan/Encik/Cik <div class='guest guest-box'><br><\/div>Bagi memeriahkan majlis perkahwinan anakanda kami"
   },
   "tentative_section": {
-    "title": "TENTATIF",
-    "style": "col",
+    "title": "ATURCARA MAJLIS",
+    "style": "row",
     "tentatives": [
       {
-        "time": "11:00 AM",
-        "details": "Majlis Bermula"
+        "time": "12pm - 5pm",
+        "details": "Jamuan makan"
       },
       {
-        "time": "12:30 PM",
-        "details": "Ketibaan Pengantin"
-      },
-      {
-        "time": "4:00 PM",
-        "details": "Majlis Berakhir"
+        "time": "12:30pm",
+        "details": "Ketibaan pengantin"
       }
     ]
   },
@@ -58,10 +64,10 @@
     "text": "“Ya Allah Ya Tuhan Kami.. Jadikanlah rumahtangga kedua mempelai ini seindah rumahtangga Adam dan Hawa, setabah Ibrahim dan Hajar, sebahagia Yusof dan Zulaikha, sesetia Sulaiman dan Balqis serta sesuci Muhammad dan Khadijah. Murahkanlah rezeki mereka, panjangkanlah umur mereka, dekatkan mereka kepada kebaikan , jauhkan mereka dari keburukan dan kurniakanlah mereka kesenangan di dunia dan akhirat.”"
   },
   "social_section": {
-    "ig_tags": "HanisForFadzil",
+    "ig_tags": "IzYuni",
     "ig_signature": null,
     "carouselAutoplay": true,
-    "images": [
+    "_images": [
       {
         "src": "/images/ring.jpeg",
         "_htmlTitle": "Hey sayangku!"
@@ -76,47 +82,32 @@
     "override_icons_color": true,
     "contacts": [
       {
-        "name": "Shukri",
-        "rel": "Ayah",
-        "tel": 60199654231,
+        "name": "Yusoff",
+        "_rel": "Ayah",
+        "tel": 601163135664,
         "whatsapp": true
       },
       {
-        "name": "Zubaidah",
-        "rel": "Mak",
-        "tel": 601151416709,
+        "name": "Sharidah",
+        "tel": 60135095102,
         "whatsapp": true
       },
       {
-        "name": "Syuhada",
-        "rel": "Adik",
-        "tel": 601111528414,
+        "name": "Liyana",
+        "tel": 60135988400,
         "whatsapp": true
       },
       {
-        "name": "Luqman",
-        "rel": "Adik",
-        "tel": 60106644025,
-        "whatsapp": true
-      },
-      {
-        "name": "Husna",
-        "rel": "Adik",
-        "tel": 60176314473,
-        "whatsapp": true
-      },
-      {
-        "name": "Mustaqim",
-        "rel": "Adik",
-        "tel": 601139766806,
+        "name": "Ayuni",
+        "tel": 60175664016,
         "whatsapp": true
       }
     ]
   },
   "ics": {
     "enabled": 1,
-    "subject": "Walimatulurus - Hanis & Fadzil",
-    "start": [2022, 10, 29, 11, 0],
+    "subject": "Walimatulurus - Ayuni & Izz",
+    "start": [2023, 2, 18, 12, 0],
     "duration": { "hours": 5 }
   }
 }
