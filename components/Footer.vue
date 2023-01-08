@@ -147,7 +147,8 @@
           <div class="box is-paddingless" :class="'bgi-' + theme">
             <header class="card-header">
               <p class="card-header-title is-size-5" :class="'txt-' + theme">
-                {{ stripAddr }}
+                ABC Grand Ballroom @ Urban Inn, Alor Setar, Kedah
+                <!-- {{ stripAddr }} -->
               </p>
             </header>
             <div class="content is-marginless">
