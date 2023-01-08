@@ -122,7 +122,6 @@
 				controls
 				allow="autoplay"
 				autoplay
-				muted
 				loop
 				preload="auto"
 				style="width: 90%; margin: auto 5%"
