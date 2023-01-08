@@ -42,9 +42,9 @@ $custom-tertiary: #694b36;
 }
 
 .couples-custom {
-  font-size: 4.5rem !important;
+  font-size: 2.5rem !important;
   margin-bottom: 1rem;
-  line-height: 1.3;
+  line-height: 1.6 !important;
   color: $custom-secondary;
 
   &>.amp {
@@ -114,8 +114,8 @@ $custom-tertiary: #694b36;
 
   .couples {
     font-family: $cover-font !important;
-    font-size: 1.8rem !important;
-    font-weight: 500 !important;
+    font-size: 1rem !important;
+    line-height: 1.8;
   }
 
   .couples .amp {
@@ -129,14 +129,21 @@ $custom-tertiary: #694b36;
   .guest.available {
     color: $custom-secondary !important;
     font-family: $cover-font !important;
-    font-size: 1.8rem !important;
-    font-weight: 500 !important;
+    font-size: 1rem !important;
+    line-height: 1.6;
   
   
     &.guest-box {
       background: $custom-primary !important;
       border: 1px solid $custom-secondary !important;
     }
+  }
+
+  .guest.guest-box .dotted {
+    border: none !important;
+    border-top: 1px dotted $custom-secondary !important;
+    color: $custom-secondary !important;
+    margin-bottom: 0;
   }
 }
 

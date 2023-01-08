@@ -120,7 +120,10 @@
 			<audio
 				ref="song"
 				controls
+				allow="autoplay"
 				autoplay
+				muted
+				loop
 				preload="auto"
 				style="width: 90%; margin: auto 5%"
 			>
@@ -140,9 +143,15 @@ export default {
 			user: (state) => state.auth.user,
 		}),
 	},
-	// mounted() {
-	// 	console.log(this.$refs?.song);
-	// }
+	mounted() {
+		// console.log(this.$refs?.song);
+		// if (this.$refs?.song) {
+		// 	let r = confirm("Would You Like To AutoPlay Music?");
+		// 	if (r == true) {
+		// 		this.$refs?.song?.play();
+		// 	}
+		// }
+	},
 };
 </script>
 
@@ -199,25 +208,32 @@ export default {
 }
 
 .date-gregorian {
-	.month,
 	.year {
 		font-weight: bold;
 		display: block;
 		letter-spacing: 2px;
-		font-size: 1rem;
+		font-size: 1.2rem;
+	}
+
+	.month {
+		font-family: "Libre Baskerville", serif;
+		display: block;
+		letter-spacing: 1.6px;
+		font-size: 0.9rem;
 	}
 
 	.day,
 	.time {
-		font-weight: bold;
+		font-family: "Libre Baskerville", serif;
 		display: inline-block;
 		padding: 0px 5px;
 		text-align: center;
 		vertical-align: middle;
 		border-top: 1px solid;
 		border-bottom: 1px solid;
-		font-size: 1rem;
-		width: 90px;
+		font-size: 0.9rem;
+		width: 110px;
+		letter-spacing: 1.6px;
 	}
 
 	.day-number {

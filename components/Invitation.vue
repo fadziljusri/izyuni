@@ -222,7 +222,6 @@ export default {
 	}
 
 	.heading-2 {
-		text-transform: uppercase;
 		font-family: $primary-font;
 		font-weight: bold;
 		font-size: 1rem;
