@@ -44,7 +44,7 @@
   },
   "invitation_section": {
     "title": "JEMPUTAN MAJLIS PERKAHWINAN",
-    "text": "Dengan segala hormatnya kami mempersilakan <br>Tan Sri/Dato'/Datin/Tuan/Puan/Encik/Cik <div class='guest guest-box'><hr class='dotted'><br><\/div>Bagi memeriahkan majlis perkahwinan anakanda kami"
+    "text": "Dengan segala hormatnya kami mempersilakan <br>Tan Sri/Dato'/Datin/Tuan/Puan/Encik/Cik <div class='guest guest-box'><hr class=''><br><\/div>Bagi memeriahkan majlis perkahwinan anakanda kami"
   },
   "tentative_section": {
     "title": "ATURCARA MAJLIS",
