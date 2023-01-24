@@ -2,7 +2,7 @@ import { fireStoreProtected as conf } from "~/wedvite.config";
 import firebase from "firebase/app";
 import { fireDb } from "~/plugins/firebase";
 import { makeid } from '~/helpers/random';
-import { pickBy } from "lodash";
+import { cloneDeep, pickBy } from "lodash";
 
 const ID_SIZE = 8;
 
@@ -19,7 +19,7 @@ export const actions = {
       .doc(conf.doc)
       .onSnapshot(doc => {
         doc = doc.data();
-        // console.log("Current data: ", doc);
+        // console.log("Current data: ", cloneDeep(doc));
 
         commit("SET_INVITATION_TEXT", doc.invitationText);
         if (doc?.guestlist) commit("SET_GUESTLIST", Object.values(doc.guestlist));
@@ -111,6 +111,10 @@ export const mutations = {
     state.invitationText = text || "";
   },
   SET_GUESTLIST(state, list) {
+    list = list.map(l => ({
+      ...l,
+      guest: String(l?.guest || "")
+    }))
     state.guestlist = list;
   },
   SET_CURRENT_GUEST(state, guest) {
